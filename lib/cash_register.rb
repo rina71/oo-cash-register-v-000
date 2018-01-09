@@ -16,7 +16,7 @@ class CashRegister
 
   def apply_discount
     if self.discount > 0
-      @total = @total - @discount
+      @total = @total - self.discount
       puts "After the discount, the total comes to #{@total}."
     else
       "There is no discount to apply."
@@ -29,7 +29,7 @@ def items
 end
 
 def void_last_transaction
-  
+
 
 end
 
